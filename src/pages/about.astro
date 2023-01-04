@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+const pageTitle = "About Me";
 ---
 
 <html lang="en">
@@ -10,15 +11,17 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<Header />
 
-		
-		<h1>My Astro iSite</h1>
+		<h1>{pageTitle}</h1>
 
-		
+		"Experts, Information, Reviews, and Coordination: Evidence on How Literary
+		Prizes Affect Sales", with Pierre-Guillaume Méon. Forthcoming at <bold>The Journal
+		of Industrial Economics.</bold>
+
 		<Footer />
 	</body>
 </html>
